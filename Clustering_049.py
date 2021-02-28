@@ -7,6 +7,7 @@ votes = pd.read_csv(r"C:\Users\Kinara\Documents\congressus.csv", engine='python'
 kmeans_model = KMeans(n_clusters=2,random_state=1) 
 senator_distances=kmeans_model.fit_transform(votes.iloc[:,3:]) 
 labels=kmeans_model.labels_
+print(labels)
 
 nomer = []
 
